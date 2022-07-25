@@ -1,0 +1,45 @@
+{
+  "run": [
+    {
+      "const": 0,
+      "real values": {
+        "betas": [
+          -1,
+          -1.2,
+          -0.65,
+          -0.25,
+          1.55
+        ],
+        "eta": 0,
+        "kappa": 0.02
+      },
+      "init": {
+        "betas": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "eta": 0,
+        "Y": "0"
+      },
+      "gibbs_sampler": {
+        "variance_proposal": 4
+      },
+      "optimization_method": "full_like",
+      "OU_burn": 100,
+      "max_time": 500,
+      "n_obs": 1000,
+      "min_values_X": [0, 0, 0, 0, 0],
+      "max_values_X": [10, 10, 10, 10, 10],
+      "maxiter": 10,
+      "samples": 10,
+      "Censure": 50000,
+      "n_iter": 50,
+      "seed": 12345,
+      "output": "latex",
+      "savefig": "True"
+    }
+  ]
+}
